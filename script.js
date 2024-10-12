@@ -187,7 +187,7 @@ function getCityCoordinates() {
     if (!cityName) return;
 
     // Dynamic search for city coordinates
-    let GEOCODING_API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName},India&limit=5&appid=${api_key}`;
+    let GEOCODING_API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},India&limit=5&appid=${api_key}`;
 
     fetch(GEOCODING_API_URL).then(res => res.json()).then(data => {
         // console.log('Geocoding Data:', data); 
